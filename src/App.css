@@ -1,0 +1,241 @@
+.main_contain{
+  background-color:#c9c9c9
+}
+
+.menu{
+  height: 5em;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white
+}
+
+.menu_brand {
+  font-size: 52px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700
+}
+
+.nav {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: black;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700
+}
+
+
+.brand{
+  font-size: 90px;
+  opacity: 0.7;
+  text-shadow: 2px 2px black;
+}
+
+.header{
+  font-size: 34px;
+  opacity: 0.7;
+  text-shadow: 1px 1px black;
+  
+}
+
+a {
+  margin: 10px;
+  color:#6d0707;
+  text-decoration: none;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.vid {
+  position: relative;
+}
+
+.overlay{
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-wrapper {
+  height: 7em;
+  width: 100vw;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  background-color: #6d0707;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-spacing {
+  margin: 20px;
+  font-size: 30px;
+  color: white;
+}
+
+.tech-wrapper {
+  height: 55em;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c9c9c9
+}
+.contain{
+  width: 90%;
+  height: 40em;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.show{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  left: -30em;
+  width: 100%;
+  -webkit-animation: slide-right 1s forwards;
+  animation: slide-right 1s forwards;  
+  padding-top: 2em; 
+}
+
+.showagain{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  right: -30em;
+  width: 100%;
+  -webkit-animation: slide-left 1s forwards;
+  animation: slide-left 1s forwards;  
+  margin-top: 3em; 
+}
+
+.thirdagain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  bottom: -20em;
+  width: 100%;
+  -webkit-animation: slide-up 1s forwards;
+  animation: slide-up 1s forwards;  
+  margin-top: 4em; 
+}
+.hidden{
+ display: none
+}
+
+.body_head {
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.project-wrapper{
+  height: 15em;
+  width: 100vw;
+  background-color: #f69600;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  padding-top: 5px;
+}
+
+.project-body {
+  height: 60em;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.project-img{
+  height: 83em;
+  width: 50vw;
+  background-color: #6d0707;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center
+}
+
+.project-desc{
+  height: 60em;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  color: #6d0707;
+  font-family: 'Amatic SC', cursive;
+  font-size: 22px;
+}
+
+.alignment {
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  margin: 20px;
+}
+
+@-webkit-keyframes slide-right {
+  100% { left: 0}
+}
+@keyframes slide-right {
+  100% { left: 0}
+}
+@-webkit-keyframes slide-left {
+  100% { right: 0}
+}
+@keyframes slide-left {
+  100% { right: 0}
+}
+@-webkit-keyframes slide-up {
+  100% { bottom: 0}
+}
+@keyframes slide-up {
+  100% { bottom: 0}
+}
+
+
+@media (max-width: 640px) {
+  .brand {
+    font-size: 56px;
+    text-align: center;
+  }
+  .project-desc {
+    display: none;
+  }
+  .project-img {
+    width: 100vw
+  }
+}
+
+/* Projects */
+.desc {
+  text-align: center
+}
